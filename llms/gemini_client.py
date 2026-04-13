@@ -6,7 +6,7 @@ load_dotenv()
 os.environ['GEMINI_API_KEY']
 
 
-llm = init_chat_model(
+gemini_llm = init_chat_model(
     "gemini-3-flash-preview",
     model_provider="google_genai",
     temperature=0

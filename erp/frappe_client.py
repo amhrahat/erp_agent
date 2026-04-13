@@ -17,10 +17,10 @@ class ERPClient:
     #     )
 
     def __init__(self):
-        self.client = FrappeClient("http://localhost:8080/")
+        self.client = FrappeClient("http://127.0.0.1:8000")
         self.client.authenticate(
-            "5906dcb71db097c",
-            "573afe72f3bf7df"
+            "bf6b1fe25a100a0",
+            "885513f67721b0d"
         )
 
 
