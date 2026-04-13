@@ -18,7 +18,7 @@ Langfuse(
 
 langfuse_handler = CallbackHandler()
 
-prompt = ChatPromptTemplate.from_messages([
+prompt = ChatPromptTemplate([
     ("system", """You are an ERPNext assistant.
 
 Rules:
@@ -91,7 +91,7 @@ def run_agent(user_input: str):
 
 
 output = run_agent(
-    "Insert a new customer named 'Rahat5' website 'https://testabc.com'"
+    "Insert a new customer named 'Rahat6' website 'https://testabc.com'"
 )
 
 print(output)

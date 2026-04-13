@@ -9,12 +9,20 @@ class ERPClient:
     Add all ERPNext operations here.
     """
 
+    # def __init__(self):
+    #     self.client = FrappeClient("http://127.0.0.1:8000/")
+    #     self.client.authenticate(
+    #         "bf6b1fe25a100a0",
+    #         "ac36014ba0481ea"
+    #     )
+
     def __init__(self):
-        self.client = FrappeClient("http://127.0.0.1:8000/")
+        self.client = FrappeClient("http://localhost:8080/")
         self.client.authenticate(
-            "bf6b1fe25a100a0",
-            "ac36014ba0481ea"
+            "5906dcb71db097c",
+            "573afe72f3bf7df"
         )
+
 
     def insert_customer(
         self,

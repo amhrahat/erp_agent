@@ -12,5 +12,5 @@ llm = init_chat_model(
     temperature=0
 )
 
-response = llm.invoke("hello")
-print(response)
+# response = llm.invoke("hello")
+# print(response)
