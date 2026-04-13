@@ -1,3 +1,5 @@
+from itertools import chain
+
 from langchain_core.messages import HumanMessage, ToolMessage
 import os
 from dotenv import load_dotenv
@@ -89,8 +91,8 @@ def run_agent(user_input: str):
     return response.content
 
 
-
-output = run_agent(
+chain = prompt | run_agent  
+output = chain.invoke(
     "Insert a new customer named 'Rahat6' website 'https://testabc.com'"
 )
 
